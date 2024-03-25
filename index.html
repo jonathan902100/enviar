@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+
+    <div class="container">
+        <div id="logo" align="center" class="logo" > <a href="index.html"><img src="images/logo.png" alt="logo" /></a> </div>
+        <div class="title">
+            <p>Anecdotario seguimiento al Talento Humano</p>
+        </div>
+
+        <form action="enviarcorreo.php" id="enviopqr" method="post">
+          <fieldset> 
+            <div class="user_details">
+                <div class="form-group">
+                    <label>Tipo de Anecdotario </label>
+                    <select class="form-control" name="tipoanec" id="tipoanec" required >
+                      <option>-Ninguno-</option>
+                      <option value="Anecdotario 1">Anecdotario 1</option>
+                      <option value="Anecdotario 2">Anecdotario 2</option>
+                      <option value="Anecdotario 3">Anecdotario 3</option>
+                    </select>
+                  </div>
+
+                <div class="input_box">
+                    <label for="Nombre">Nombre del Empleado Acusado</label>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo" required>
+                </div>
+                <div class="input_box">
+                    <label for="Identificacion">Identificacion</label>
+                    <input type="text" name="Identificacion" id="Identificacion" placeholder="Identificacion" required>
+                </div>
+              
+              <div class="input_box">
+                    <label for="Cargo">Cargo</label>
+                    <input type="text" name="Cargo" id="Cargo" placeholder="Cargo Empleado" required>
+                </div>
+              <!--<div class="input_box">
+                    <label for="Area">Area</label>
+                    <input type="text" name="Area" id="Area" placeholder="Area de Trabajo" required>
+                </div>-->
+              <div class="input_box">
+                    <label for="Jefe">Jefe Inmediato</label>
+                    <input type="text" name="Jefe" id="Jefe" placeholder="Jefe Empleado" required>
+                </div>
+              <div class="input_box">
+                    <label for="Fecha">Fecha</label>
+                    <input type="date" name="Fecha" id="Fecha" placeholder="Fecha No Conformidad" required>
+                </div>
+                
+                <div class="title">
+                    <p>Quien Interpone la Eventualidad</p>
+                </div>
+
+              <div class="input_box">
+                    <label for="NombreInterpone">Nombre</label>
+                    <input type="text" name="NombreInterpone" id="NombreInterpone" placeholder="Nombre Completo" required>
+                </div>
+              <div class="input_box">
+                    <label for="Idinterpone">Identificacion</label>
+                    <input type="text" name="Idinterpone" id="Idinterpone" placeholder="Identificacion" required>
+                </div>
+                <div class="input_box">
+                    <label for="CargoInterpone">Cargo</label>
+                    <input type="text" name="CargoInterpone" id="CargoInterpone" placeholder="Cargo Empleado" required>
+                </div>
+                <div class="input_box">
+                    <label for="AreaInterpone">area</label>
+                    <input type="text" name="AreaInterpone" id="AreaInterpone" placeholder="Area de Trabajo" required>
+                </div>
+                <div class="input_box">
+                    <label for="Descripcion">Descripcion de la Eventualidad</label>
+                        <textarea cols="100" name="Descripcion" id="Descripcion" style="max-width:100%;" rows="5" class="textinput" ></textarea>
+                
+                </div>
+                <div class="input_box">
+                    <label for="Accion">Compromiso de Mejora</label>
+                        <textarea cols="100" name="Accion" id="Accion" style="max-width:100%;" rows="5" class="textinput" ></textarea>
+                
+                </div>
+                
+            </div>
+
+            <div class="reg_btn">
+                <input type="submit" id="enviopqr" >
+            </div>
+        </form>
+    </fieldset>
+    </div>
+</body>
+</html>
+
